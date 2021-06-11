@@ -8,8 +8,7 @@ namespace Snake
         static void Main(string[] args)
         {
             Console.SetBufferSize(150, 50);
-            Point p = new Point(4, 5, '*');
-            p.Draw();
+            
 
             // Отрисовка рамочки
             HorizontalLine upLine = new HorizontalLine(1, 78, 1, '+');
@@ -21,11 +20,13 @@ namespace Snake
             leftLine.Draw();
             rightLine.Draw();
 
+            // Отрисовка точек
+            Point p = new Point(4, 5, '*');
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Draw();
 
 
-           
 
-            
 
 
 

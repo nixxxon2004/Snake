@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Snake
 {
-    public class VerticalLine
+    public class VerticalLine: Figure
     {
-        List<Point> pList;
+        
 
         public VerticalLine(int yUp, int yDown, int x, char sym)
         {
@@ -23,8 +23,8 @@ namespace Snake
         }
 
         
-            }
-        }
+            
+        
 
 
 
